@@ -25,13 +25,20 @@
             	}	
 
 
+
+
+
+
+
+
+
 	        .seccionsuperior {
                         display: flex;
                         flex-direction: column;
                         text-align: center;
                         margin-left: auto;
                         margin-right: auto;
-                        gap: 11px;
+                        gap: 18px;
                         max-width: 80%;
                         justify-content: center;
                         align-items: center;                      
@@ -39,16 +46,56 @@
 
 
 
+
+
+
+
+        footer {
+                        
+                        display: flex;
+                        gap: 18px;
+                        padding: 7px;
+                        flex-direction: row;
+                        background: #312182;
+                        
+                        margin-top: 113px;
+                        color: #FCFCFC;
+                        bottom: 0;
+                        justify-content: center;
+                        
+            	}
+
+
+
+
+
+
+
+
+
+
+
+
+
                  h1 {
                         font-size: 39px;
                         text-align: center;
                         color: #55D676;
+                        margin: 12px;
                 }
+
+
+
+
+
+
+
+
 
 
                 .divComidas {
                         display: flex;
-                        gap: 8px;
+                        gap: 13px;
                         padding: 7px;
                         flex-direction: row;
                         grid-template-columns: 2fr 1fr;
@@ -59,8 +106,20 @@
                         max-width: 100%;
                         align-items: center;
                         justify-items: end;
+                        font-size: 24px;
                         
                 }
+
+
+
+
+
+
+
+
+
+
+
 
 
                  .button {
@@ -70,6 +129,9 @@
                         }        
 
 	
+
+
+
         
         </style>
 </head>
@@ -77,68 +139,108 @@
 
 <body>
     <div class="seccionsuperior">
+
+
+
         <h1>Qué comer en San Luis</h1>
         
-        <a href='{% url 'quees' %}' style="color:  #30b930" >
-            <div id="Comidas" class="divComidas">
-              Carnes y Lomos <img width="49" height="49" src="emojis/Carnes y Lomos.png">
+
+
+
+        <a href='carnesylomos.html' style="color:  #199a98" >
+            <div class="divComidas">
+              Carnes y Lomos <img width="70" height="70" src="emojis/Carnes y Lomos.png">
             </div>
           </a>   
                 
 
-          <a href="hamburguesas.html" style="color:  #FFE869">
-            <div id="Comidas" class="divComidas">
-                Hamburguesas <img width="49" height="49" src="emojis/Hamburguesas.png">
-            </div>
-          </a>
 
-          <a href="helado.html" style="color:#1d1aa5" >
-            <div id="Comidas" class="divComidas">
-                <span style="color:#50e929">Helado </span> <img width="49" height="49" src="emojis/Helado.png" >
-            </div>
-          </a>
 
-          <a href="empanadas.html" style="color:  #ee2aad">
-            <div id="Comidas" class="divComidas">
-                Empanadas <img width="49" height="49" src="emojis/Empanadas.png">
-            </div>
-          </a>
 
-          <a href="pizzas.html" style="color:  #da1515">
-            <div id="Comidas" class="divComidas">
-                Pizzas <img width="49" height="49" src="emojis/Pizzas.png">
-            </div>
-          </a>
-
-          <a href="pastas.html" style="color:  #FFE869">
-            <div id="Comidas" class="divComidas">
-                Pastas <img width="49" height="49" src="emojis/Pastas.png">
-            </div>
-          </a>
-
-          <a href="panadería.html" style="color:  #53eb34">
-            <div id="Comidas" class="divComidas">
-                Panadería <img width="49" height="49" src="emojis/Panadería.png">
-            </div>
-          </a>
-
-          <a href="sushi.html" style="color:  #6ef590">
-            <div id="Comidas" class="divComidas">
-                Sushi <img width="49" height="49" src="emojis/Sushi.png">
-            </div>
-          </a>
-
-          <a href="verduras.html" style="color:  #FFE869">
-            <div id="Comidas" class="divComidas">
-                Verduras <img width="49" height="49" src="emojis/Verduras.png">
+          <a href="hamburguesas.html" style="color:  #199a6b">
+            <div class="divComidas">
+                Hamburguesas <img width="70" height="70" src="emojis/Hamburguesas.png">
             </div>
           </a>
 
 
 
------------------
+
+          <a href="helado.html" style="color:#9a199a" >
+            <div class="divComidas">
+                Helado <img width="70" height="70" src="emojis/Helado.png" >
+            </div>
+          </a>
+
+
+
+
+          <a href="empanadas.html" style="color:  #879a19">
+            <div class="divComidas">
+                Empanadas <img width="70" height="70" src="emojis/Empanadas.png">
+            </div>
+          </a>
+
+
+
+
+          <a href="pizzas.html" style="color:  #1f9a19">
+            <div class="divComidas">
+                Pizzas <img width="70" height="70" src="emojis/Pizzas.png">
+            </div>
+          </a>
+
+
+
+
+          <a href="pastas.html" style="color:  #9a1919">
+            <div class="divComidas">
+                Pastas <img width="70" height="70" src="emojis/Pastas.png">
+            </div>
+          </a>
+
+
+
+
+          <a href="panadería.html" style="color:  #9a1962">
+            <div class="divComidas">
+                Panadería <img width="70" height="70" src="emojis/Panadería.png">
+            </div>
+          </a>
+
+
+
+
+          <a href="sushi.html" style="color:  #199a22">
+            <div class="divComidas">
+                Sushi <img width="70" height="70" src="emojis/Sushi.png">
+            </div>
+          </a>
+
+
+
+
+          <a href="verduras.html" style="color:  #194a9a">
+            <div class="divComidas">
+                Verduras <img width="70" height="70" src="emojis/Verduras.png">
+            </div>
+          </a>
+
+
+
+
 
 
     </div>   
+
+
+
+
+    <footer>
+
+<div> Acerca de este sitio  </div>
+<div> ¿Querés adherir tu negocio?  </div>
+
+    </footer>
 </body>
 </html>

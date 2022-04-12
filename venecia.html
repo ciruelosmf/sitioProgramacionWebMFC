@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!---  --->
+{% load static %}
+<html>
+
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum- 		scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <meta charset = "utf.8">
+
+	<title> Qué comer en San Luis </title>
+	<style>
+
+
+                body {
+                        @import "compass/css3";
+                        font-family: 'Fugaz One', cursive;
+                        background: #15202B;
+                        letter-spacing: 0.4px;
+                        background: #452182;
+                        color: #FCFCFC;
+            	}
+
+
+	        .seccionsuperior {
+                        display: grid;
+
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        gap: 11px;
+                        max-width: 80%;
+                        justify-content: space-evenly;
+                        justify-items: center;
+		}
+
+
+
+                 h1 {
+                        font-size: 22px;
+                        text-align: center;
+                        color: #F3F3F3;
+                        max-width: 40%;
+                }
+
+
+                .divLugar {
+                        display: flex;
+                        flex-direction: row;
+                        text-align: center;
+                        gap: 8px;
+                        padding: 7px;
+                        grid-template-columns: 2fr 1fr;
+                        border: 2.1px solid #3f0c00;
+                        background: #811800;
+                        color: #FFC4C4;
+                        border-radius: 7px;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-items: end;
+
+                }
+                .divLugares {
+                        display: flex;
+                        gap: 11px;
+                        padding: 6px;
+
+                        flex-direction: column;
+
+                        color: #FFC4C4;
+                        border-radius: 7px;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-items: end;
+
+                }
+
+                .divObjetoCulinario {
+                        display: flex;
+                        gap: 1px;
+                        padding: 11px;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        flex: 0 0 10%;
+                        font-size: 14px;
+                        color: #FFC4C4;
+
+                        border: 7px;
+                        border-color: red;
+                        border-radius: 7px;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-items: end;
+
+                }
+
+
+                 .divLugarLogo {
+                        display: flex;
+                        border: none;
+                        color: white;
+                        justify-content: space-around;
+                        }
+               
+               
+               
+                input {
+                        -webkit-appearance:none;
+                        appearance:none;
+                        width:50px;
+                        height:20px;
+                        border:2px solid red;
+                        outline:none;
+                        border-radius:30px;
+                        transition:.3s;
+
+                        }
+
+
+
+                input::before {
+                        content:"";
+                        position:absolute;
+
+                        width:17px;
+                        height:17px;
+                        
+                        background: green;
+                        
+                        border-radius:50%;
+                        transition:.3s ease;
+                        }
+
+
+                input:checked:before {
+                    transform:translatex(30px);
+                    background: blue;
+
+                        }
+
+
+
+                input:checked{
+                border-color:red;
+
+                        }
+
+        </style>
+</head>
+
+
+<body>
+    <div class="seccionsuperior">
+        <div class="divLugarLogo">
+
+
+
+                <div class="divLugar"><a href="https://wa.me/5493512038306/?text=he">
+                <span> Venecia </span></a>
+                <img width="49" height="49" src="{% static "/images/Carnes y Lomos.png" %}">
+
+                </div>
+                <h1>Qué comer en San Luis</h1>
+
+        </div>
+
+                        <div class="divObjetoCulinario">
+
+
+
+                                <span style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-left-radius: 7px;
+                                        border-bottom-left-radius: 7px; padding:6px;">   Deshuesado de pechuga de pollo con guarnición
+                                </span>
+
+                                <div style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-right-radius: 7px;
+                                        border-bottom-right-radius: 7px; padding:6px;">
+                                         $540
+                                         <input type="checkbox">       
+                                </div>
+                        
+                        </div>
+                        
+
+
+
+                        <div class="divObjetoCulinario">
+                                <span style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-left-radius: 7px;
+                                        border-bottom-left-radius: 7px; padding:6px;">   Bife de chorizo
+                                </span>
+
+                                <div style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-right-radius: 7px;
+                                        border-bottom-right-radius: 7px; padding:6px;">
+                                         $650
+                                         <input type="checkbox">
+                                </div>
+                        </div>
+
+
+                        <div class="divObjetoCulinario">
+                                <span style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-left-radius: 7px;
+                                        border-bottom-left-radius: 7px; padding:6px;">   Deshuesado de pechuga de pollo con guarnición
+                                </span>
+
+                                <div style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-right-radius: 7px;
+                                        border-bottom-right-radius: 7px; padding:6px;">
+                                         $540
+                                </div>
+                        </div>
+
+
+
+
+
+
+
+
+<button>Quiero pedir esto <a href="https://wa.me/5493512038306/?text=Quiero pedir esto"></a></button>
+
+
+    </div>
+</body>
+</html>

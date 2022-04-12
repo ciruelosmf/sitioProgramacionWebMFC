@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!---  --->
+{% load static %}
+<html>
+
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum- 		scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <meta charset = "utf.8">
+        
+	<title> Qué comer en San Luis </title>
+	<style>
+
+        
+                body {
+                        @import "compass/css3";
+                        font-family: 'Fugaz One', cursive;
+                        background: #15202B; 
+                        letter-spacing: 0.4px;
+                        background: #452182;
+                        color: #FCFCFC;
+            	}	
+
+
+	        .seccionsuperior {
+                        display: grid;
+                        
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        gap: 11px;
+                        max-width: 80%;
+                        justify-content: space-evenly;
+                        justify-items: center;                      
+		}
+
+
+
+                 h1 {
+                        font-size: 22px;
+                        text-align: center;
+                        color: #55D676;
+                }
+
+
+                .divComidas {
+                        display: flex;
+                        flex-direction: row;
+                        text-align: center;
+                        gap: 8px;
+                        padding: 7px;
+                        grid-template-columns: 2fr 1fr;
+                        border: 2.1px solid #3f0c00;
+                        background: #811800;
+                        color: #FFC4C4;
+                        border-radius: 7px;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-items: end;
+                        
+                }
+                .divLugares {
+                        display: flex;
+                        gap: 11px;
+                        padding: 6px;
+                        
+                        flex-direction: column;
+
+                        color: #FFC4C4;
+                        border-radius: 7px;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-items: end;
+                        
+                }
+
+                .divLugar {
+                        display: flex;
+                        gap: 1px;
+                        padding: 11px;                        
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        flex: 0 0 10%;
+                        color: #FFC4C4;
+                        border: 7px;
+                        border-color: red;
+                        border-radius: 7px;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-items: end;
+                        
+                }
+
+
+                 .button {
+                        background-color: #4CAF50; /* Green */
+                        border: none;
+                        color: white;
+                        }        
+
+	
+        
+        </style>
+</head>
+
+
+<body>
+    <div class="seccionsuperior">
+        <h1>Qué comer en San Luis</h1>
+                 
+                <div class="divComidas"> 
+                <span> Lugares que venden Carnes y Lomos </span> 
+                <img width="49" height="49" src="{% static "/images/Carnes y Lomos.png" %}">   
+                </div>    
+                  
+                
+                <div class="divLugares">
+                        <a href='{% url 'quees' %}' style="color:  #30b930" >
+                        <div class="divLugar"> 
+                                <span style="color:  #FFC4C4; border: 3px solid #811800; border-top-left-radius: 7px;
+                                        border-bottom-left-radius: 7px; padding:6px;">   Venecia
+                                </span>
+
+                                <div style="color:  #FFC4C4; border: 3px solid #811800; border-top-right-radius: 7px;
+                                        border-bottom-right-radius: 7px; padding:6px;"> 
+                                        Milanesa napolitana desde $450                                
+                                </div>
+                        </div>
+                         </a>
+                        <div class="divLugar"> 
+                                <span style="color:  #FFC4C4; border: 3px solid #811800; border-top-left-radius: 7px;
+                                        border-bottom-left-radius: 7px; padding:6px;">   Tambaleo
+                                </span>
+
+                                <div style="color:  #FFC4C4; border: 3px solid #811800; border-top-right-radius: 7px;
+                                        border-bottom-right-radius: 7px; padding:6px;"> 
+                                        Costillas a la parrilla con papas fritas desde $1150                                
+                                </div>
+                        </div>                        
+
+                        <div class="divLugar"> 
+                                <span style="color:  #FFC4C4; border: 3px solid #811800; border-top-left-radius: 7px;
+                                        border-bottom-left-radius: 7px; padding:6px;">   El Patio Fernet and Beer
+                                </span>
+
+                                <div style="color:  #FFC4C4; border: 3px solid #811800; border-top-right-radius: 7px;
+                                        border-bottom-right-radius: 7px; padding:6px;"> 
+                                        Lomo especial desde $650                                
+                                </div>
+                        </div>
+
+                        <div class="divLugar"> 
+                                <span style="color:  #FFC4C4; border: 3px solid #811800; border-top-left-radius: 7px;
+                                        border-bottom-left-radius: 7px; padding:6px;">   Malabar
+                                </span>
+
+                                <div style="color:  #FFC4C4; border: 3px solid #811800; border-top-right-radius: 7px;
+                                        border-bottom-right-radius: 7px; padding:6px;"> 
+                                        Pollo a las brasas con limón o chimi desde $1150                                
+                                </div>
+                        </div>   
+
+
+
+
+                        
+                        <span>El malon</span>
+                        <span>El porfiao</span>
+                        <span>Venecia</span>
+                        <span>Venecia</span>
+                        <span>Venecia</span>
+
+                </div>
+ 
+    </div>   
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!---  --->
+{% load static %}
+<html>
+
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum- 		scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <meta charset = "utf.8">
+        
+	<title> Qué comer en San Luis </title>
+	<style>
+
+
+                body {
+                        
+                        font-family: 'Fugaz One', cursive;
+                        background: #15202B; 
+                        letter-spacing: 0.4px;
+                        background: #452182;
+                        color: #FCFCFC;
+            	}	
+
+
+	        .seccionsuperior {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        gap: 11px;
+                        max-width: 80%;
+                        justify-content: center;
+                        align-items: center;                      
+		}
+
+
+
+                 h1 {
+                        font-size: 39px;
+                        text-align: center;
+                        color: #55D676;
+                }
+
+
+                .divComidas {
+                        display: flex;
+                        gap: 8px;
+                        padding: 7px;
+                        flex-direction: row;
+                        grid-template-columns: 2fr 1fr;
+                        border: 2.1px solid #3f0c00;
+                        background: #811800;
+                        color: #FFC4C4;
+                        border-radius: 5.65px;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-items: end;
+                        
+                }
+
+
+                 .button {
+                        background-color: #4CAF50; /* Green */
+                        border: none;
+                        color: white;
+                        }        
+
+	
+        
+        </style>
+</head>
+
+
+<body>
+    <div class="seccionsuperior">
+        <h1>Qué comer en San Luis</h1>
+        
+        <a href='{% url 'quees' %}' style="color:  #30b930" >
+            <div id="Comidas" class="divComidas">
+              Carnes y Lomos <img width="49" height="49" src="{% static "/images/Carnes y Lomos.png" %}">
+            </div>
+          </a>   
+                
+
+          <a href="hamburguesas.html" style="color:  #FFE869">
+            <div id="Comidas" class="divComidas">
+                Hamburguesas <img width="49" height="49" src="{% static "/images/Hamburguesas.png" %}">
+            </div>
+          </a>
+
+          <a href="helado.html" style="color:#1d1aa5" >
+            <div id="Comidas" class="divComidas">
+                <span style="color:#50e929">Helado </span> <img width="49" height="49" src="{% static "/images/Helado.png" %}">
+            </div>
+          </a>
+
+          <a href="empanadas.html" style="color:  #ee2aad">
+            <div id="Comidas" class="divComidas">
+                Empanadas <img width="49" height="49" src="{% static "/images/Empanadas.png" %}">
+            </div>
+          </a>
+
+          <a href="pizzas.html" style="color:  #da1515">
+            <div id="Comidas" class="divComidas">
+                Pizzas <img width="49" height="49" src="{% static "/images/Pizzas.png" %}">
+            </div>
+          </a>
+
+          <a href="pastas.html" style="color:  #FFE869">
+            <div id="Comidas" class="divComidas">
+                Pastas <img width="49" height="49" src="{% static "/images/Pastas.png" %}">
+            </div>
+          </a>
+
+          <a href="panadería.html" style="color:  #53eb34">
+            <div id="Comidas" class="divComidas">
+                Panadería <img width="49" height="49" src="{% static "/images/Panadería.png" %}">
+            </div>
+          </a>
+
+          <a href="sushi.html" style="color:  #6ef590">
+            <div id="Comidas" class="divComidas">
+                Sushi <img width="49" height="49" src="{% static "/images/Sushi.png" %}">
+            </div>
+          </a>
+
+          <a href="verduras.html" style="color:  #FFE869">
+            <div id="Comidas" class="divComidas">
+                Verduras <img width="49" height="49" src="{% static "/images/Verduras.png" %}">
+            </div>
+          </a>
+
+
+
+-----------------
+
+
+    </div>   
+</body>
+</html>

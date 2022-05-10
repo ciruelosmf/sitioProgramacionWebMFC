@@ -20,8 +20,10 @@
                         font-family: 'Roboto', cursive;
                         background: #15202B;
                         letter-spacing: 0.7px;
-                        background: #452182;
+                        background: rgb(69,33,130);
+                        background: linear-gradient(180deg, rgba(69,33,130,1) 35%, rgba(34,33,130,1) 100%);
                         color: #FCFCFC;
+                        min-height: 98vh;
             	}
 
 
@@ -80,7 +82,7 @@
 
                 }
 
-                .divObjetoCulinario {
+                .divComida {
                         display: flex;
                         gap: 1px;
                         padding: 11px;
@@ -176,6 +178,10 @@
 </head>
 
 
+
+
+
+
 <body>
     <div class="seccionsuperior">
 
@@ -213,7 +219,7 @@
 
         </div>
 
-                        <div class="divObjetoCulinario">
+                        <div class="divComida">
 
 
                                 <span style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-left-radius: 7px;
@@ -222,8 +228,11 @@
 
                                 <div style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-right-radius: 7px;
                                         border-bottom-right-radius: 7px; padding:6px;">
-                                         $540
-                                         <input type="checkbox">       
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Deshuesado de pechuga de pollo con guarnición" id="c1">540 pesos</label>
+                                            
+
+  
                                 </div>
                         
                         </div>
@@ -233,15 +242,24 @@
 
 
 
-                        <div class="divObjetoCulinario">
+                        <div class="divComida">
                                 <span style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-left-radius: 7px;
                                         border-bottom-left-radius: 7px; padding:6px;">   Bife de chorizo
                                 </span>
 
                                 <div style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-right-radius: 7px;
                                         border-bottom-right-radius: 7px; padding:6px;">
-                                         $650
-                                         <input type="checkbox">
+
+
+
+                                <label for="c1"> <input type="checkbox" name="color" value="Bife de chorizo" id="c1">650 pesos</label>
+                                                                        
+ 
+
+
+
+
+
                                 </div>
                         </div>
 
@@ -249,7 +267,7 @@
 
 
 
-                        <div class="divObjetoCulinario">
+                        <div class="divComida">
                                 <span style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-left-radius: 7px;
                                         border-bottom-left-radius: 7px; padding:6px;">   Deshuesado de pechuga de pollo con guarnición
                                 </span>
@@ -266,11 +284,85 @@
 
 
 
-                        <button class="botton" onclick="location.href='https://wa.me/54926644651015/?text=Quiero pedir esto'" type="button">
+
+
+
+
+
+
+                        <button class="botton" onclick="generateLink()" type="button">
                                 Quiero pedir esto</button>
 
 
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        
+        const btn = document.querySelector('#btn');
+        
+
+
+        function listen_checks() {
+                let checkboxes = document.querySelectorAll('input[name="color"]:checked');
+                let values = [];
+                checkboxes.forEach( (checkbox) => {
+                        values.push(checkbox.value); } );
+
+                
+                let s = values.join(', '); 
+                console.log("1");
+                console.log(s);
+                console.log("2");
+                return s;
+                };    
+
+
+
+
+
+
+
+
+        function generateLink() {
+
+                let msg = listen_checks();       
+                 let number = "54926644651015";
+                console.log("asd");
+                console.log(msg);
+                let url = "https://wa.me/";
+                let end_url = `${url}${number}?text=${"Hola, quiero pedir: "+msg}`;
+                window.location.href =  end_url;
+
+                
+
+                }
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
 </body>
 </html>

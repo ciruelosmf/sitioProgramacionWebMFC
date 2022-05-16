@@ -87,7 +87,7 @@
                         gap: 1px;
                         padding: 11px;
                         flex-direction: row;
-                        flex-wrap: wrap;
+                        flex-wrap: nowrap;
                         flex: 0 0 10%;
                         font-size: 18px;
                         color: #FFC4C4;
@@ -159,12 +159,35 @@
 
 
                         .titleLugar{
-                                display: flex;
-                        flex-direction: row;
-                        margin: 25px;
+ 
+                        
+                        color:  #F3F3F3; 
+
+                        border: 3px solid #811800; 
+                        border-radius: 7px;
+                        padding:13px;
                  
 
                         }
+
+
+
+                        .precioLugar{
+ 
+                        
+                                color:  #F3F3F3; 
+
+                                border: 3px solid #811800; 
+                                border-radius: 7px;
+                                padding:13px;
+                                display: flex;
+                                gap: 1px;
+                                padding: 11px;
+                                flex-direction: row;
+                                align-items: center;
+
+
+                                }
 
 
 
@@ -204,7 +227,7 @@
 
 
 
-                <div class="titleLugar"> 
+                <div > 
                         
                         <a href="index.html"> 
                                 <h1>Qué comer en San Luis</h1> 
@@ -222,16 +245,14 @@
                         <div class="divComida">
 
 
-                                <span style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-left-radius: 7px;
-                                        border-bottom-left-radius: 7px; padding:6px;">   Deshuesado de pechuga de pollo con guarnición
-                                </span>
+                                <div class="titleLugar">   Deshuesado de pechuga de pollo con guarnición
+                                </div>
 
-                                <div style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-right-radius: 7px;
-                                        border-bottom-right-radius: 7px; padding:6px;">
+                                <div class="precioLugar">
                                           
-                                         <label for="c1"> <input type="checkbox" name="color" value="Deshuesado de pechuga de pollo con guarnición" id="c1">540 pesos</label>
+                                         <label for="c1"> <input type="checkbox" name="color" value="Deshuesado de pechuga de pollo con guarnición" id="c1">  </label>
                                             
-
+                                         <div>540 pesos</div>
   
                                 </div>
                         
@@ -306,14 +327,20 @@
 
 
 
-
-
+ 
 
     <script>
+
+
+
+
 
         
         const btn = document.querySelector('#btn');
         
+
+
+
 
 
         function listen_checks() {
@@ -329,7 +356,6 @@
                 console.log("2");
                 return s;
                 };    
-
 
 
 

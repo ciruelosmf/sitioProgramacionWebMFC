@@ -15,6 +15,9 @@
 	<style>
 
 
+
+
+
                 body {
                         
                         font-family: 'Fugaz One', cursive;
@@ -23,6 +26,12 @@
                         background: #452182;
                         color: #FCFCFC;
             	}	
+
+
+
+
+
+
 
 
 	        .seccionsuperior {
@@ -35,7 +44,24 @@
                         max-width: 80%;
                         justify-content: center;
                         align-items: center;                      
-		}
+	              	}
+
+
+
+
+
+
+                .divTituloQueComer {
+
+
+                  padding: 7px;
+
+
+                  }
+
+
+
+
 
 
 
@@ -43,10 +69,56 @@
                         font-size: 45px;
                         text-align: center;
                         color: #55D676;
+                        margin: 5px;
                 }
 
 
+
+
+
+
+
+
+
+                h2 {
+                        font-family: 'Roboto', cursive;
+                        font-size: 20px;
+                        text-align: center;
+                        color: #ebebeb;
+                        margin: 12px;
+                         
+                }
+
+
+
+
+
+
+
+
+
+
+
+                .divDescFormulario {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        max-width: 35%;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
                 .divFormulario {
+                        
                         display: flex;
                         gap: 8px;
                         padding: 22px;
@@ -63,6 +135,41 @@
                 }
 
 
+
+                .divNombreNegocio{
+                  padding-bottom: 22px;
+                }
+
+
+
+
+                .divLabel {
+                        
+                  font-size: 25px;
+                  padding: 12px;
+                        
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                  .botton {
                         background-color: #4CAF50; /* Green */
                         border: none;
@@ -73,15 +180,31 @@
 
 
 
+
+
+
+
+
                         .rectForm {
-                        background-color: #e1e1e1; /* Green */
-                        border: solid seagreen;
+                          background-color: rgb(196, 107, 107); /* Green */
+                        border: solid #4CAF50;
                         color: white;
                         height: 73px;
                         width: 333px;
                         }      
 
 
+
+
+
+
+
+
+                        .divChecksComidas {
+                          margin-top: 20px;
+                        }      
+
+                         
 
                         
 
@@ -91,27 +214,78 @@
 </head>
 
 
+
+
+
 <body>
+
+
     <div class="seccionsuperior">
 
-      <div>  <a href="index.html"> <h1>Qué comer en San Luis</h1> </a>  </div>
-        
+
+
+ 
+      <div class="divTituloQueComer">  
+          <a href="index.html"> 
+            <h1>Qué comer en San Luis</h1> 
+          </a>  
+      </div>
+
+
+
+
+      <div class="divDescFormulario">    
+          <h2>
+            Si te interesa integrar y listar tu restaurante a nuestro sitio, completá por favor este formulario con los datos de tu negocio
+          </h2>    
+      </div>
+
+
+
+
 
      <div class="divFormulario"> 
 
 
         <form class="tagForm" >
+
             <div class="divNombreNegocio">
-              <div> <label>Nombre del negocio</label>  </div>
+
+              <div class="divLabel"> 
+
+                <label>
+                    Nombre del negocio
+                </label>  
+
+              </div>
               
               <input value="" type="text" class="rectForm">
             </div>
 
+
+
+
+
+
+
+
             <div class="divEmailNegocio">
-              <div> <label>Email de contacto</label></div>
+
+
+              <div class="divLabel"> 
+
+                <label>
+                  Email de contacto
+                </label>  
+
+              </div>
+               
               <input value="tunegocio@email.com" type="text" class="rectForm">
             </div>
  
+
+
+
 
 
 
@@ -130,41 +304,47 @@
 
 
 
-            <div> <label>Tipos de Comidas o elementos a ofrecer</label>  </div>
+            <div class="divChecksComidas"> <label>Tipos de Comidas o elementos a ofrecer</label>  
 
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> Carnes y Lomos</label><br>
 
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Hamburguesas</label><br>
+            <div>
 
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Helado</label><br>
 
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Emapanadas</label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Carnes y Lomos</label><br>
 
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Pizzas</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Hamburguesas</label><br>
 
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Pasta</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Helado</label><br>
 
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Hamburguesas</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Emapanadas</label><br>
 
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Pastas</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Pizzas</label><br>
 
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Sushi</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Pasta</label><br>
 
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Hamburguesas</label><br>
+
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Pastas</label><br>
+
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Sushi</label><br>
+
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
             <label for="vehicle2"> Verduras</label><br>
 
 
+          </div>
 
 
+          </div>
 
             <button class="botton">    Enviar información</button>
 

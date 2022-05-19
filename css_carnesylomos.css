@@ -61,9 +61,12 @@
 
 
 
-                /*      */
-                /*      */
-                /*      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
 
 
 
@@ -72,12 +75,12 @@
 
 
 
+                /* Slideshow container */
+                .slideshow-container {
+                position: relative;
+                
+                }
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-   
-}
 
 
 
@@ -85,96 +88,96 @@
 
 
 
+                /* Slides */
+                .mySlides {
+                display: none;
+                padding: 40px;
+                text-align: center;
+                }
 
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 40px;
-  text-align: center;
-}
 
 
 
+                /* Next & previous buttons */
+                .prev, .next {
+                cursor: pointer;
+                position: center;
+                top: 50%;
+                width: auto;
+                margin-top: -30px;
+                padding: 16px;
+                color: #888;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: center;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
 
 
 
+                /* Position the "next button" to the right */
+                .next {
+                position: center;
+                right: 0;
+                border-radius: 3px 0 0 3px;
+                }
 
-/* Position the "next button" to the right */
-.next {
-  position: center;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
 
 
 
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+                color: white;
+                }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
 
 
 
 
+                /* The dot/bullet/indicator container */
+                .dot-container {
+                text-align: center;
+                padding: 20px;
+                background: #ddd;
+                }
 
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-}
 
 
 
 
+                /* The dots/bullets/indicators */
+                .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
 
 
 
 
+                .active, .dot:hover { background-color: #717171;}
 
-.active, .dot:hover { background-color: #717171;}
+                q {  font-size: 79px; }
+                p {  font-size: 31px; }
 
-q {  font-size: 79px; }
-p {  font-size: 31px; }
 
 
 
 
+                /* Add a blue color to the author */
+                .author {color: #fff1f1;
+                        margin: 2px;
+                }
 
-/* Add a blue color to the author */
-.author {color: #fff1f1;
-        margin: 2px;
-}
 
 
 
@@ -185,12 +188,12 @@ p {  font-size: 31px; }
 
 
 
-
-
-
-/*      -------------------------------      */
-/*      -------------------------------      */
-/*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
+/*      -------------------------------      *//*      -------------------------------      */
 
 
 
@@ -283,13 +286,14 @@ p {  font-size: 31px; }
 
 
                         footer {
-                        
+                        position: absolute;
                         display: flex;
                         gap: 55px;
                         padding: 7px;
                         flex-direction: row;
                         background: #312182;
-                        
+                        left: 0;
+                        right: 0;               
                         margin-top: 113px;
                         color: #FCFCFC;
                         bottom: 0;

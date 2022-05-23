@@ -75,8 +75,8 @@
 
 
 
-                /* Slideshow container */
-                .slideshow-container {
+                /* carrousel */
+                .carro {
                 position: relative;
                 
                 }
@@ -98,8 +98,8 @@
 
 
 
-                /* Next & previous buttons */
-                .prev, .next {
+                /* adelantar y retroceder */
+                .anterior, .siguiente {
                 cursor: pointer;
                 position: center;
                 top: 50%;
@@ -116,8 +116,8 @@
 
 
 
-                /* Position the "next button" to the right */
-                .next {
+                /* boton siguente a  */
+                .siguiente {
                 position: center;
                 right: 0;
                 border-radius: 3px 0 0 3px;
@@ -126,8 +126,8 @@
 
 
 
-                /* On hover, add a black background color with a little bit see-through */
-                .prev:hover, .next:hover {
+                /* en hover, a */
+                .anterior:hover, .siguiente:hover {
                 background-color: rgba(0,0,0,0.8);
                 color: white;
                 }
@@ -136,46 +136,25 @@
 
 
 
-                /* The dot/bullet/indicator container */
-                .dot-container {
-                text-align: center;
-                padding: 20px;
-                background: #ddd;
-                }
-
-
-
-
-
-                /* The dots/bullets/indicators */
-                .dot {
-                cursor: pointer;
-                height: 15px;
-                width: 15px;
-                margin: 0 2px;
-                background-color: #bbb;
-                border-radius: 50%;
-                display: inline-block;
-                transition: background-color 0.6s ease;
-                }
+ 
 
 
 
 
 
 
-                .active, .dot:hover { background-color: #717171;}
-
-                q {  font-size: 79px; }
-                p {  font-size: 31px; }
 
 
+
+
+              /* d */
 
 
 
                 /* Add a blue color to the author */
                 .author {color: #fff1f1;
                         margin: 2px;
+                        font-size: 20px;
                 }
 
 

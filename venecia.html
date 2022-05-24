@@ -84,8 +84,8 @@
 
                 .divComida {
                         display: flex;
-                        gap: 1px;
-                        padding: 11px;
+                        gap: 32px;
+                        padding: 2px;
                         flex-direction: row;
                         flex-wrap: nowrap;
                         flex: 0 0 10%;
@@ -104,6 +104,7 @@
 
                  .divLugarLogo {
                         display: flex;
+                        flex-direction: column;
                         border: none;
                         color: white;
                         justify-content: space-around;
@@ -133,7 +134,7 @@
                         width:17px;
                         height:17px;
                         
-                        background: #55d676;
+                        background: #811800;
                         
                         border-radius:50%;
                         transition:.3s ease;
@@ -142,14 +143,14 @@
 
                 input:checked:before {
                     transform:translatex(30px);
-                    background: #811800;
+                    background: #55d676;
 
                         }
 
 
 
                 input:checked{
-                border-color:#811800;
+                border-color:#55d676;
 
                         }
 
@@ -165,7 +166,7 @@
 
                         border: 3px solid #811800; 
                         border-radius: 7px;
-                        padding:4px;
+                        padding:10px;
                         min-height: 40px;
                         display: flex;
                                 gap: 1px;
@@ -184,7 +185,7 @@
 
                                 border: 3px solid #811800; 
                                 border-radius: 7px;
-                                padding:4px;
+                                padding:10px;
                                 display: flex;
                                 gap: 1px;
  
@@ -203,6 +204,51 @@
 
 
 
+                                .container-comidas{
+ 
+                        
+                                color:  #F3F3F3; 
+ 
+                                border-radius: 7px;
+                                padding:4px;
+                                display: flex;
+                                gap: 18px;
+ 
+                                flex-direction: column;
+                                align-items: flex-end;
+                                min-height: 40px;
+
+
+                                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                .botton {
+                 color:#811800;
+                 margin: 25px;
+                 height: 25px;
+
+                        }
+
+
+
+
+
+
+
+
+
         </style>
 </head>
 
@@ -212,23 +258,16 @@
 
 
 <body>
+
+
+
+
     <div class="seccionsuperior">
+
 
         <div class="divLugarLogo">
 
 
-
-
-
-                <div class="divLugar">
-                        <a href="https://wa.me/549123123123/?text=eh">
-                                 <span> Venecia </span>
-                        </a>
-                        <img width="49" height="49" src="Emojis/Carnes y Lomos.png">
-
-                </div>
-                
-                
 
 
 
@@ -243,10 +282,30 @@
 
 
 
+                
+                <div class="divLugar">
+                        <a href="https://wa.me/549123123123/?text=eh">
+                                 <span> Venecia </span>
+                        </a>
+                        <img width="49" height="49" src="Emojis/Carnes y Lomos.png">
+
+                </div>
+                
+                
 
 
 
         </div>
+
+
+
+
+
+
+
+                                <div class="container-comidas">
+
+
 
                         <div class="divComida">
 
@@ -269,49 +328,154 @@
 
 
 
+
+
+
+
+
+
                         <div class="divComida">
-                                <span style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-left-radius: 7px;
-                                        border-bottom-left-radius: 7px; padding:6px;">   Bife de chorizo
-                                </span>
-
-                                <div style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-right-radius: 7px;
-                                        border-bottom-right-radius: 7px; padding:6px;">
 
 
+                                <div class="titleLugar">   Carne al horno
+                                </div>
 
-                                <label for="c1"> <input type="checkbox" name="color" value="Bife de chorizo" id="c1">650 pesos</label>
-                                                                        
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Deshuesado de pechuga de pollo con guarnición" id="c1">  </label>
+                                            
+                                         <div>540 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="divComida">
+
+
+                                <div class="titleLugar">   Milanesas napolitanas
+                                </div>
+
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Deshuesado de pechuga de pollo con guarnición" id="c1">  </label>
+                                            
+                                         <div>540 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="divComida">
+
+
+                                <div class="titleLugar">   Lomito express
+                                </div>
+
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Deshuesado de pechuga de pollo con guarnición" id="c1">  </label>
+                                            
+                                         <div>540 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="divComida">
+
+
+                                <div class="titleLugar">   Bife de lomo al roquefort
+                                </div>
+
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Deshuesado de pechuga de pollo con guarnición" id="c1">  </label>
+                                            
+                                         <div>540 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="divComida">
+
+
+                                <div class="titleLugar">   Deshuesado de pechuga de pollo con guarnición
+                                </div>
+
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Deshuesado de pechuga de pollo con guarnición" id="c1">  </label>
+                                            
+                                         <div>540 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+
+
+
  
 
 
 
 
 
-                                </div>
-                        </div>
-
-
-
-
-
-                        <div class="divComida">
-                                <span style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-left-radius: 7px;
-                                        border-bottom-left-radius: 7px; padding:6px;">   Deshuesado de pechuga de pollo con guarnición
-                                </span>
-
-                                <div style="color:  #F3F3F3; background: #A66C00; border: 3px solid #FFA600; border-top-right-radius: 7px;
-                                        border-bottom-right-radius: 7px; padding:6px;">
-                                         $540
-                                </div>
-                        </div>
-
-
-
-
-
-
-
-
+                </div>
 
 
 
@@ -322,7 +486,7 @@
 
 
 
-    </div>
+                
 
 
 

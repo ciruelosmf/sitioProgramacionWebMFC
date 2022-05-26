@@ -1,5 +1,12 @@
 
         
+
+
+
+
+
+
+
                 body {
                         @import "compass/css3";
                         font-family: 'Fugaz One', cursive;
@@ -12,7 +19,52 @@
             	}	
 
 
+
+
+
+
+
+
+
+
+
+a:visited { 
+
+                        text-decoration: none; 
+                        color: #FCFCFC;
+                }
+                
+                s
+a:link  {
+                
+                        color: #FCFCFC; 
+                        text-decoration: none; 
+                
+                }
+                
+                
+a       {
+                        text-decoration: none;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	        .seccionsuperior {
+
                         display: grid;
                         text-align: center;
                         margin-left: auto;
@@ -21,24 +73,66 @@
                         max-width: 80%;
                         max-height: 100%;
                         justify-content: space-evenly;
-                        justify-items: center;                      
+                        justify-items: center;  
+
 		}
 
 
 
 
 
+
+
+
+
+
                  h1 {
-                        margin: 1px;
-                        font-size: 49px;
+
+                        margin: 5px;
+                        font-size: 45px;
                         text-align: center;
                         color: #55D676;
+
                 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+                .divTituloQueComer {
+
+                        padding: 7px;
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 .divComidas {
+
                         display: flex;
                         flex-direction: row;
                         text-align: center;

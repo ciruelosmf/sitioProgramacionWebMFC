@@ -1,0 +1,402 @@
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:200');
+
+
+
+
+
+
+body {
+
+        @import "compass/css3";
+        font-family: 'Rubik', sans-serif;
+        background: #15202B;
+        letter-spacing: 0.7px;
+        background: rgb(69,33,130);
+        background: linear-gradient(180deg, rgba(69,33,130,1) 35%, rgba(34,33,130,1) 100%);
+        color: #FCFCFC;
+        min-height: 98vh;
+
+    }
+
+
+
+
+
+
+
+
+
+
+.seccionsuperior {
+
+        display: grid;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 8px;
+        max-width: 80%;
+        justify-content: space-evenly;
+        justify-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.divTituloQueComer {
+
+        padding: 7px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a:visited { 
+
+        text-decoration: none; 
+        color: #FCFCFC;
+}
+
+
+a:link  {
+
+        color: #FCFCFC; 
+        text-decoration: none; 
+
+}
+
+
+a       {
+        text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ h1 {
+        font-family: 'Fugaz One', cursive;
+        font-size: 45px;
+        text-align: center;
+        color: #55D676;
+        margin: 5px;
+}
+
+
+
+
+
+
+
+.divLugar {
+
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 8px;
+        padding: 7px;
+        grid-template-columns: 2fr 1fr;
+        border: 2.1px solid #3f0c00;
+        background: #811800;
+        color: #FCFCFC;
+        border-radius: 7px;
+        max-width: 100%;
+        align-items: center;
+        justify-items: end;
+        max-height:57px;
+
+}
+
+
+
+
+
+
+
+.divLugares {
+
+        display: flex;
+        gap: 11px;
+        padding: 6px;
+        flex-direction: column;
+        color: #FFC4C4;
+        border-radius: 7px;
+        max-width: 100%;
+        align-items: center;
+        justify-items: end;
+
+}
+
+
+
+
+
+
+
+.divComida {
+
+        display: flex;
+        gap: 32px;
+        padding: 2px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex: 0 0 10%;
+        font-size: 18px;
+        color: #FFC4C4;
+        border: 7px;
+        border-color: red;
+        border-radius: 7px;
+        max-width: 100%;
+        align-items: center;
+        justify-items: end;
+
+}
+
+
+
+
+
+
+
+ .divLugarLogo {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        color: #FCFCFC;
+        justify-content: space-around;
+        align-items: center;
+        }
+
+
+
+
+
+
+
+
+input {
+        -webkit-appearance:none;
+        appearance:none;
+        width:50px;
+        height:20px;
+        border:2px solid red;
+        outline:none;
+        border-radius:30px;
+        transition:.3s;
+
+        }
+
+
+
+
+
+
+
+
+input::before {
+        content:"";
+        position:absolute;
+
+        width:17px;
+        height:17px;
+        
+        background: #811800;
+        
+        border-radius:50%;
+        transition:.3s ease;
+        }
+
+
+
+
+
+
+
+
+
+input:checked:before {
+    transform:translatex(30px);
+    background: #55d676;
+
+        }
+
+
+
+
+
+
+
+
+
+input:checked {
+
+        border-color:#55d676;
+
+}
+
+
+
+
+
+
+
+
+.titleLugar{
+
+        color: #FCFCFC;
+        border: 3px solid #811800; 
+        border-radius: 7px;
+        padding:10px;
+        min-height: 50px;
+        display: flex;
+        gap: 1px;
+        flex-direction: row;
+        align-items: center;
+ 
+        }
+
+
+
+
+
+
+
+.precioLugar{
+
+                color:  #F3F3F3; 
+                border: 3px solid #811800; 
+                border-radius: 7px;
+                padding:10px;
+                display: flex;
+                gap: 11px;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+                min-height: 50px;
+                min-width: 174px;
+
+                }
+
+
+
+
+
+
+
+
+
+.container-comidas{
+
+                color: #FCFCFC;
+                border-radius: 7px;
+                padding:4px;
+                display: flex;
+                gap: 18px;
+                flex-direction: column;
+                align-items: flex-end;
+                min-height: 40px;
+
+                }
+
+
+
+
+
+
+
+
+                 
+
+.botton {
+
+                        padding: 19px 30px;
+                        box-shadow: 0px 0px 12px -2px rgba(206, 9, 9, 0.5);
+                        line-height: 1.25;
+                        background: #811800;
+                        border: 2.1px solid #3f0c00;
+                        border-radius: 5vh;
+                        text-decoration: none;
+                        color: #FCFCFC;
+                        font-size: 16px;
+                        letter-spacing: .08em;
+                        
+                        position: relative;
+                        transition: background-color .6s ease;
+                        overflow: hidden;
+                        margin-top: 35px;
+                        margin-bottom: 115px;
+
+                        &:after {
+                          content: "";
+                          position: absolute;
+                          width: 0;
+                          height: 0;
+                          top: 50%;
+                          left: 50%;
+                          top: var(--mouse-y);
+                          left: var(--mouse-x);
+                          transform-style: flat;
+                          transform: translate3d(-50%,-50%,0);
+                          background: rgba(white,.1);
+                          border-radius: 100%;
+                          transition: width .3s ease, height .3s ease;
+                        }
+                        &:focus,
+                        &:hover {
+                            background: darken(#FC6E51,7%);
+                        }
+                        &:active {
+                          &:after {
+                            width: 300px;
+                            height: 300px;
+                          }
+                        }
+                      }
+
+
+
+/*
+
+                .botton {
+ color:#811800;
+ margin: 25px;
+ height: 25px;
+
+        }
+
+*/
+
+
+
+
+

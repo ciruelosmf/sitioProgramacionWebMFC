@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!---  --->
+
+<html>
+
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum- 		scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <meta charset = "utf.8">
+        <link rel="stylesheet" type="text/css" href="css_tambaleo.css">
+	<title> Qué comer en San Luis </title>
+  
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+    <div class="seccionsuperior">
+
+
+
+
+
+
+        <div class="divTituloQueComer">
+                
+                        <a href="index.html"> 
+                                        <h1>Qué comer en San Luis</h1>
+                        </a> 
+              
+        </div>
+
+
+
+
+
+        <div class="divLugarLogo">
+
+
+                <div class="divLugar">
+
+                        <a href="https://wa.me/549123123123/?text=eh">
+
+                                 <span> Tambaleo </span>
+                        </a>
+                        
+                        <img width="49" height="49" src="Emojis/Carnes y Lomos.png">
+
+                </div>
+                
+
+        </div>
+
+
+
+
+
+
+
+                <div class="container-comidas">
+
+
+
+                        <div class="divComida">
+
+
+                                <div class="titleLugar">   Medallón de carne con ensalada
+                                </div>
+
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Medallón de carne con ensalada" id="c1">  </label>
+                                            
+                                         <div>850 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+                        
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="divComida">
+
+
+                                <div class="titleLugar">   Bife de chorizo con papa fritas
+                                </div>
+
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Bife de chorizo con papa fritas" id="c1">  </label>
+                                            
+                                         <div>1800 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="divComida">
+
+
+                                <div class="titleLugar">   Vacio al roquefort con fritas
+                                </div>
+
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Vacio al roquefort con fritas" id="c1">  </label>
+                                            
+                                         <div>1100 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="divComida">
+
+
+                                <div class="titleLugar">   Costeleta a la riojana
+                                </div>
+
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Costeleta a la riojana" id="c1">  </label>
+                                            
+                                         <div>1540 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="divComida">
+
+
+                                <div class="titleLugar">   Costillas con ensalada
+                                </div>
+
+                                <div class="precioLugar">
+                                          
+                                         <label for="c1"> <input type="checkbox" name="color" value="Costillas con ensalada" id="c1">  </label>
+                                            
+                                         <div>2540 pesos</div>
+  
+                                </div>
+                        
+                        </div>
+
+
+
+
+                </div>
+
+
+
+
+
+                        <button class="botton" id="botton"  onclick="generateLink()" type="button">
+                                Mandar mensaje de WhatsApp con mi pedido</button>
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+ 
+
+    <script>
+
+
+
+
+
+        
+        const btn = document.querySelector('#btn');
+        
+
+        function listen_checks() {
+
+                let checkboxes = document.querySelectorAll('input[name="color"]:checked');
+
+                let values = [];
+
+                checkboxes.forEach( (checkbox) => {
+
+                        values.push(checkbox.value); 
+
+                } 
+                );
+
+                let s = values.join(', '); 
+                console.log("1");
+                console.log(s);
+                console.log("2");
+                return s;
+
+                };    
+
+
+
+
+
+
+
+        function generateLink() {
+
+                let msg = listen_checks();       
+                let number = "54926644651015";
+                console.log("asd");
+                console.log(msg);
+                let url = "https://wa.me/";
+                let end_url = `${url}${number}?text=${"Hola, quiero pedir: "+msg}`;
+                window.location.href =  end_url;
+
+                }
+
+
+
+
+
+
+        let button = document.getElementById("botton");
+
+
+
+        button.addEventListener('mousemove', (e) => {
+
+                        x = e.offsetX;
+                        y = e.offsetY;
+                        button.style.setProperty('--mouse-x', x + "px");
+                        button.style.setProperty('--mouse-y', y + "px");
+
+        });
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

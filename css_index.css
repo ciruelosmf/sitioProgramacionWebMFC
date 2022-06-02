@@ -15,6 +15,28 @@ body {
 
 
 
+a:visited { 
+
+        text-decoration: none; 
+        color: #FCFCFC;
+}
+
+
+a:link  {
+
+        color: #FCFCFC; 
+        text-decoration: none; 
+
+}
+
+
+a       {
+        text-decoration: none;
+}
+
+
+
+
 
 
 .opciones {
@@ -95,7 +117,7 @@ footer {
         gap: 55px;
          
         flex-direction: row;
-        background: #312182;
+        
         left: 0;
         right: 0;               
         margin-top: 113px;

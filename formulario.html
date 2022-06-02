@@ -58,29 +58,27 @@
      <div class="divFormulario"> 
 
 
-        <form class="tagForm" >
+        <form onsubmit="return enviar()" class="tagForm" >
 
-            <div class="divNombreNegocio">
+            <div class="divNombreNegocio" id="divNombreNegocio">
 
               <div class="divLabel"> 
 
-                <label>
-                    Nombre del negocio
-                </label>  
+                <label> Nombre del negocio </label>  
 
               </div>
               
-              <input value="" type="text" class="rectForm">
+              <input value="" type="text" class="rectForm" id="nombre_negocio_input">
             </div>
 
 
 
 
+<!--   -------------------------------       --><!--   -------------------------------       -->
 
 
 
-
-            <div class="divEmailNegocio">
+            <div class="divEmailNegocio" id="divEmailNegocio" >
 
 
               <div class="divLabel"> 
@@ -91,12 +89,12 @@
 
               </div>
                
-              <input value="tunegocio@email.com" type="text" class="rectForm">
+              <input value="tunegocio@email.com" type="text" class="rectForm" id="nombre_mail_input">
             </div>
  
 
 
-
+<!--   -------------------------------       --><!--   -------------------------------       -->
 
 
 
@@ -104,13 +102,13 @@
         
 
             
-            <div class="divBiografia">
+            <div class="divBiografia" id="divBiografia">
               <div class="divLabel"> <label>Biografía del negocio</label>  </div>
-              <textarea rows="3" class="rectForm"></textarea>
+              <textarea rows="3" class="rectForm" id="biografia_input"></textarea>
             </div>
             
 
-
+<!--   -------------------------------       --><!--   -------------------------------       -->
 
 
 
@@ -130,31 +128,19 @@
 
 
 
-
+<!--   -------------------------------       --><!--   -------------------------------       -->
 
 
 
             <div class="divChecksComidas">
-
-
-
-              
-
-
-
-
-
 
                     <input type="checkbox"class="vehicle1" id="asd" name="vehicle1[]" value="Bike">
                       <label for="vehicle1"> 
                         Carnes y Lomos
                     </label>
 
-
-
+              
                     <div id="divChecksComidas2">
-
-
 
                   </div>
 
@@ -169,51 +155,215 @@
 
 
 
+<!--   -------------------------------       --><!--   -------------------------------       -->
+              
+
+              <div class="divChecksComidas">
+
+                    <input type="checkbox"class="vehicle1" id="asd2" name="vehicle1[]" value="Bike">
+                      <label for="vehicle1"> 
+                        Hamburguesas
+                    </label>
+
+              
+                    <div id="divChecksComidas-hambur">
+
+                  </div>
+
+
+                    <div id="controls-hambur">
+                      <a href="#!" style="text-decoration: none;" id="add_more_fields-hambur">Agregar elemento a ofrecer</a>
+                      <a href="#!" style="text-decoration: none;" id="remove_fields-hambur">Quitar elemento a ofrecer</a>
+                    </div>
+
+              </div>
+
+
+<!--   -------------------------------       -->              <!--   -------------------------------       -->
 
 
 
 
+                            <div class="divChecksComidas">
+
+                    <input type="checkbox"class="vehicle1" id="Helado" name="vehicle1[]" value="Bike">
+                      <label for="vehicle1"> 
+                        Helado
+                    </label>
+
+              
+                    <div id="divChecksComidas2">
+
+                  </div>
+
+
+                    <div id="controls">
+                      <a href="#!" style="text-decoration: none;" id="add_more_fields">Agregar elemento a ofrecer</a>
+                      <a href="#!" style="text-decoration: none;" id="remove_fields">Quitar elemento a ofrecer</a>
+                    </div>
+
+              </div>
+
+
+<!--   -------------------------------       --><!--   -------------------------------       -->
+
+
+
+                            <div class="divChecksComidas">
+
+                    <input type="checkbox"class="vehicle1" id="Empanadas" name="vehicle1[]" value="Bike">
+                      <label for="vehicle1"> 
+                        Empanadas
+                    </label>
+
+              
+                    <div id="divChecksComidas2">
+
+                  </div>
+
+
+                    <div id="controls">
+                      <a href="#!" style="text-decoration: none;" id="add_more_fields">Agregar elemento a ofrecer</a>
+                      <a href="#!" style="text-decoration: none;" id="remove_fields">Quitar elemento a ofrecer</a>
+                    </div>
+
+              </div>
+
+
+
+<!--   -------------------------------       --><!--   -------------------------------       -->
 
 
 
 
-                
+                            <div class="divChecksComidas">
+
+                    <input type="checkbox"class="vehicle1" id="Pizzas" name="vehicle1[]" value="Bike">
+                      <label for="vehicle1"> 
+                        Pizzas
+                    </label>
+
+              
+                    <div id="divChecksComidas2">
+
+                  </div>
+
+
+                    <div id="controls">
+                      <a href="#!" style="text-decoration: none;" id="add_more_fields">Agregar elemento a ofrecer</a>
+                      <a href="#!" style="text-decoration: none;" id="remove_fields">Quitar elemento a ofrecer</a>
+                    </div>
+
+              </div>
+
+
+
+<!--   -------------------------------       -->
+
+
+
+                            <div class="divChecksComidas">
+
+                    <input type="checkbox"class="vehicle1" id="Pasta" name="vehicle1[]" value="Bike">
+                      <label for="vehicle1"> 
+                        Pasta
+                    </label>
+
+              
+                    <div id="divChecksComidas2">
+
+                  </div>
+
+
+                    <div id="controls">
+                      <a href="#!" style="text-decoration: none;" id="add_more_fields">Agregar elemento a ofrecer</a>
+                      <a href="#!" style="text-decoration: none;" id="remove_fields">Quitar elemento a ofrecer</a>
+                    </div>
+
+              </div>
 
 
 
 
+<!--   -------------------------------       -->
+
+
+                            <div class="divChecksComidas">
+
+                    <input type="checkbox"class="vehicle1" id="Panaderia" name="vehicle1[]" value="Bike">
+                      <label for="vehicle1"> 
+                        Panadería
+                    </label>
+
+              
+                    <div id="divChecksComidas2">
+
+                  </div>
+
+
+                    <div id="controls">
+                      <a href="#!" style="text-decoration: none;" id="add_more_fields">Agregar elemento a ofrecer</a>
+                      <a href="#!" style="text-decoration: none;" id="remove_fields">Quitar elemento a ofrecer</a>
+                    </div>
+
+              </div>
+
+
+
+<!--   -------------------------------       -->
 
 
 
 
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Hamburguesas</label><br>
+                            <div class="divChecksComidas">
 
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Helado</label><br>
+                    <input type="checkbox"class="vehicle1" id="Sushii" name="vehicle1[]" value="Bike">
+                      <label for="vehicle1"> 
+                        Sushi
+                    </label>
 
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Emapanadas</label><br>
+              
+                    <div id="divChecksComidas2">
 
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Pizzas</label><br>
-
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Pasta</label><br>
-
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Hamburguesas</label><br>
-
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Pastas</label><br>
-
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Sushi</label><br>
-
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Verduras</label><br>
+                  </div>
 
 
+                    <div id="controls">
+                      <a href="#!" style="text-decoration: none;" id="add_more_fields">Agregar elemento a ofrecer</a>
+                      <a href="#!" style="text-decoration: none;" id="remove_fields">Quitar elemento a ofrecer</a>
+                    </div>
+
+              </div>
+
+
+
+<!--   -------------------------------       -->
+
+
+                            <div class="divChecksComidas">
+
+                    <input type="checkbox"class="vehicle1" id="Verdurass" name="vehicle1[]" value="Bike">
+                      <label for="vehicle1"> 
+                        Verduras
+                    </label>
+
+              
+                    <div id="divChecksComidas2">
+
+                  </div>
+
+
+                    <div id="controls">
+                      <a href="#!" style="text-decoration: none;" id="add_more_fields">Agregar elemento a ofrecer</a>
+                      <a href="#!" style="text-decoration: none;" id="remove_fields">Quitar elemento a ofrecer</a>
+                    </div>
+
+              </div>
+
+
+
+
+<!--   -------------------------------       -->
           
 
 

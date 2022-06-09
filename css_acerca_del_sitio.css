@@ -1,0 +1,252 @@
+
+      @import url('https://fonts.googleapis.com/css?family=Rubik:200');  
+
+
+
+
+
+
+
+                body {
+                        
+                        @import "compass/css3";
+                        font-family: 'Rubik', sans-serif;
+                        background: #15202B; 
+                        letter-spacing: 0.4px;
+                        background: rgb(69,33,130);
+                        background: linear-gradient(180deg, rgba(69,33,130,1) 35%, rgba(34,33,130,1) 100%);
+                        color: #FCFCFC;
+                        min-height: 98vh;
+            	}	
+
+
+
+
+
+
+
+
+
+
+
+a:visited { 
+
+                        text-decoration: none; 
+                        color: #FCFCFC;
+                }
+                
+                
+a:link  {
+                
+                        color: #FCFCFC; 
+                        text-decoration: none; 
+                
+                }
+                
+                
+a       {
+                        text-decoration: none;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	        .seccionsuperior {
+
+                        display: grid;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        gap: 11px;
+                        max-width: 50%;
+                        max-height: 100%;
+                        justify-content: space-evenly;
+                        justify-items: center;  
+
+		}
+
+
+
+
+
+
+
+
+
+
+                 h1 {
+                        font-family: 'Fugaz One', cursive;
+                        margin: 5px;
+                        font-size: 45px;
+                        text-align: center;
+                        color: #55D676;
+
+                }
+
+
+
+
+                 h2 {
+
+                        margin: 5px;
+                        font-size: 39px;
+                        text-align: center;
+                        color: #FCFCFC;
+
+                }
+
+
+
+
+
+
+
+
+
+                .divTituloQueComer {
+
+                        padding: 7px;
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                /* carrousel */
+                .texto-grande {
+                                display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                  font-size: 25px;
+                  align-items: center;
+                  gap: 44px;
+                  max-width: 60%;
+
+
+                
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                .divLugares {
+                        display: flex;
+                        gap: 25px;
+                        padding: 6px;
+                        font-size: 69px;
+                        flex-direction: column;
+
+                        color: #FFC4C4;
+                        border-radius: 7px;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-items: end;
+                        
+                }
+
+
+
+
+
+                .divLugar {
+                        display: flex;
+                        
+                        gap: 1px;
+                        padding: 11px;                        
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        flex: 0 0 10%;
+                        color: #FFC4C4;
+                        border: 7px;
+                        border-color: red;
+                        border-radius: 7px;
+                        max-width: 100%;
+                        align-items: center;
+                        justify-items: end;
+                        font-size: 21px;
+                        
+                }
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+
+
+
+
+
+                        footer {
+                       
+                        display: flex;
+                        gap: 55px;
+                        padding: 7px;
+                        flex-direction: row;
+
+                        left: 0;
+                        right: 0;               
+                        margin-top: 113px;
+                        color: #FCFCFC;
+                        bottom: 0;
+                        justify-content: center;
+                        
+            	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+      

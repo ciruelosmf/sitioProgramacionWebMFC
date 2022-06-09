@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
         <meta charset = "utf.8">
-        <link rel="stylesheet" type="text/css" href="css_carnesylomos.css">
+        <link rel="stylesheet" type="text/css" href="css_acerca_del_sitio.css">
         
 	<title> Qué comer en San Luis </title>
 	
@@ -27,73 +27,54 @@
         </a> 
       </div>
           
+              
+
+
                   
 
-
-
-                  <div class="divComidas"> 
-
-    
-                  <span> Lugares que venden Carnes y Lomos </span> 
-                  <img width="49" height="49" src="emojis/Carnes y Lomos.png">   
-
-
-                  </div>    
+                  <h2> ¿De qué se trata todo esto? </h2> 
+                  
+                     
                     
 
 
 
+                  <div class="texto-grande">
 
 
-                  <div class="carro">
+                          <div ">
 
-                          <div class="mySlides">
-                            <div class="restaurante">
-                                    <a href='venecia.html'> Venecia </a>  
-                          </div>
-                            <p class="author">- Milanesa napolitana desde $450 -</p>
-                          </div>
-                          
-
-                          <div class="mySlides">
-                            <div class="restaurante">
-                                    <a href='tambaleo.html'> Tambaleo </a>  
-                          </div>
-                            <p class="author">- Bife de chorizo con papas fritas desde $1800 -</p>
-                          </div>
-
-                          
-
-
-                          <div class="mySlides">
-                                  <div class="restaurante">El Patio Fernet and Beer</div>
-                            <p class="author">- Lomo especial desde $650 -</p>
-                          </div>
-                          
-
-
-                          <div class="mySlides">
-                                  <div class="restaurante">Malabar</div>
-                            <p class="author">- Pollo a las brasas con limón o chimi desde $1150 -</p>
+                            <p >Este sitio reune la oferta gastronómica de diversos negocios de la ciudad que venden comida. </p>
                           </div>
 
 
+                    
+                          <div ">
 
-
-
-
-
-                          <a class="anterior" onclick="plusSlides(-1)">❮</a>
-                          <a class="siguiente" onclick="plusSlides(1)">❯</a>
-                          
+                            <p > Además tiene la funcionalidad de poder armar un mensaje directo hacia el número Whatsapp del negocio con el menú armado. -</p>
                           </div>
 
-                        
+                    
+                    
+
+      
+                        <img src="como_usar_1.PNG" alt="como usar" width="501" height="231">
 
 
-                
-                
- 
+
+                                <div ">
+
+                            <p > Esa operación, le llevará al sitio de WhatsApp Web para enviar el mensaje con su         pedido. -</p>
+                          </div>
+
+                    
+                     
+
+      
+                        <img src="como_usar_2.PNG" alt="como usar" width="760" height="289">
+
+                </div>
+            </div>                  
         </div> 
         
         
@@ -110,9 +91,7 @@
 
         <footer>
 
-                              <a href="acerca_del_sitio.html" style="color:  #55D676">
-                    <div> Acerca de este sitio  </div>
-                </a> 
+
 
 
                 <div>           
@@ -149,33 +128,22 @@
         <script>
 
 
-
-
                 var slideIndex = 1;
                 showSlides(slideIndex);
                 
-
-
-
                 function plusSlides(n) {
                   showSlides(slideIndex += n);
                 }
                 
-
-
-
                 function currentSlide(n) {
                   showSlides(slideIndex = n);
                 }
                 
-
-
-
                 function showSlides(n) {
 
                   var i;
                   var slides = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("dot");
+                  
                   console.log(slideIndex);
 
 
@@ -184,11 +152,9 @@
                         } 
 
 
-
                   if (n < 1) {
                     slideIndex = slides.length
                               }
-
 
 
                   for (i = 0; i < slides.length; i++) {
@@ -196,14 +162,8 @@
                         }
 
 
-
-                  for (i = 0; i < dots.length; i++) {
-                      dots[i].className = dots[i].className.replace(" active", "");
-                        }
-
-
                   slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
+                
 
                 }
                 

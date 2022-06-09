@@ -1,6 +1,6 @@
 
 
-                body {
+body {
                         
                         font-family: 'Fugaz One', cursive;
                         background: #15202B; 
@@ -13,10 +13,7 @@
 
 
 
-
-
-
-	        .seccionsuperior {
+.seccionsuperior {
                         display: flex;
                         flex-direction: column;
                         text-align: center;
@@ -33,7 +30,7 @@
 
 
 
-                .divTituloQueComer {
+.divTituloQueComer {
 
 
                   padding: 7px;
@@ -45,14 +42,12 @@
 
 
 
-
-
-                 h1 {
+h1 {
                         font-size: 45px;
                         text-align: center;
                         color: #55D676;
                         margin: 5px;
-                }
+}
 
 
 
@@ -60,113 +55,91 @@
 
 
 
-
-
-                h2 {
-                        font-family: 'Roboto', cursive;
+h2 {
+                        font-family: 'Consolas', monospace;
                         font-size: 20px;
                         text-align: center;
                         color: #ebebeb;
                         margin: 12px;
                          
-                       }
+}
 
 
 
 
 
 
-
-
-
-
-
-                .divDescFormulario {
+.divDescFormulario {
                         display: flex;
                         flex-direction: column;
                         text-align: center;
                         max-width: 50%;
-                               }
+}
 
 
 
 
 
 
-
-
-
-
-
-
-                .divFormulario {
+.divFormulario {
                         
                         display: flex;
                         gap: 8px;
                         padding: 22px;
- 
                         flex-direction: row;
                         justify-content: center;
                         border: 2.1px solid #3f0c00;
                         background: #811800;
-                        color: #FFC4C4;
+                        color: #FCFCFC;
                         border-radius: 5.65px;
                          width: 700px;
                         align-items: center;
                         justify-items: end;
                         
-                                   }
+}
 
 
 
 
 
 
-                .divNombreNegocio{
+#div_mensaje{
+                   font-size: 33px;
+                  font-family: 'Consolas', monospace;
+}
+
+
+
+
+
+.divNombreNegocio{
                    
-                }
+}
 
 
 
 
-
-
-
-                .divLabel {
+.divLabel {
                         
                   font-size: 25px;
                   padding: 12px;
                         
-                }
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                 .botton {
+.botton {
                         background-color: #4CAF50; /* Green */
                         border: none;
-                        color: #ebebeb;
+                        color: #1a1a1a;
                         height: 62px;
-                        width: 144px;
+                        width: 194px;
                         margin-top: 33px;
-                        }        
+                         border-radius: 5vh;
+                   font-size: 19px;
+}        
 
 
 
@@ -176,7 +149,7 @@
 
 
 
-                  form {
+form {
                         display: flex;
                         gap: 23px;
                         flex-direction: column;
@@ -191,9 +164,9 @@
 
 
 
-                        .rectForm {
-                          
-                          background-color: #ffc4c45e; /* Green */
+.rectForm {
+                          font-family: 'Consolas', monospace;
+                          background-color: #ffc4c45e; 
                         border: solid #ebebeb;
                         color: #ebebeb;
                         height: 73px;
@@ -208,20 +181,20 @@
 
 
 
-                        .divChecksComidas {
+.divChecksComidas {
                           margin-top: 20px;
                         }      
 
                          
 
 
-                        #survey_options{
+#survey_options{
                           padding: 14px;
                            
                         }
 
 
-                        #survey_options input{
+#survey_options input{
                           padding: 14px;
                           height: 20px;
                         }
@@ -231,17 +204,45 @@
 
 
 
-                        .controls {
-                          padding: 16px;
-                          height: 18px;
+#controls {
+                          padding: 14px;
+                          height: 24px;
                           color: #ebebeb;
                           display: none;
+                          flex-direction: row;
+                        justify-content: center;
                         }
 
 
 
-                        .controls a {
+#controls-hambur {
+                          padding: 14px;
+                          height: 24px;
+                          color: #ebebeb;
+                          display: none;
+                          flex-direction: row;
+                          justify-content: center;
+                        }
 
+
+
+
+
+
+                        #controls a {
+                          padding: 8px;
+                          height: 34px;
+                          
+                          color: #ebebeb;
+                        }
+
+
+
+
+                        #controls-hambur a {
+                          padding: 8px;
+                          height: 34px;
+                          
                           color: #ebebeb;
                         }
 

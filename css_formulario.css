@@ -67,6 +67,18 @@ h2 {
 
 
 
+p {
+                        font-family: 'Consolas', monospace;
+                        font-size: 16px;
+                        text-align: center;
+                        color: #ebebeb;
+                        margin: 12px;
+                         
+}
+
+
+
+
 
 
 .divDescFormulario {
@@ -101,15 +113,24 @@ h2 {
 
 
 
-
+/*
 
 #div_mensaje{
                    font-size: 33px;
                   font-family: 'Consolas', monospace;
 }
+*/
 
 
+.classDivMensaje{
+                     font-size: 33px;
+                  font-family: 'Consolas', monospace;
+}
 
+p.classDivMensaje{
+                     font-size: 33px;
+                  font-family: 'Consolas', monospace;
+}
 
 
 .divNombreNegocio{
@@ -229,7 +250,18 @@ form {
 
 
 
-                        #controls a {
+#controls a {
+                          font-family: 'Consolas', monospace;
+                          padding: 8px;
+                          height: 34px;
+                          border: 2.1px solid #3f0c00;
+                          color: #ebebeb;
+                        }
+
+
+
+
+#controls-hambur a {
                           padding: 8px;
                           height: 34px;
                           
@@ -238,11 +270,9 @@ form {
 
 
 
-
-                        #controls-hambur a {
+#para_1{
                           padding: 8px;
-                          height: 34px;
-                          
-                          color: #ebebeb;
+                          margin: 8px;
+
                         }
 

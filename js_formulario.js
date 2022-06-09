@@ -195,6 +195,7 @@ let elemento_inputs_extras = document.getElementsByClassName("para_2");
 
 let msj_aux = "En breve nos contactaremos a su email para finalizar el ingreso a la plataforma.";
 
+
 let f1 = document.createElement("p");
 let f2 = document.createElement("p");
 let f3 = document.createElement("p");
